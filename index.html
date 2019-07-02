@@ -6,36 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unsplash Api</title>
-  <link rel="stylesheet" href="css/search.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!--  JAMES: I am using Jquery here! Ozzy dont cry, I cant help it. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/search.css">
 </head>
 
 <body>
-  <div class="title special">
-    <h1>Pic-zania</h1>
-    <div class="form-container">
-      <form>
-        <input type="text" required />
-        <button><img src="assets/search.svg" alt="Search svg"></button><label>Search photos...</label>
-      </form>
-    </div>
+  <div id="title">
+    <h1>Project</h1>
   </div>
   <main>
-    <div id="tag">
-      <h3>Popular Tags:</h3>
-      <ul id="tagLinks">
-        <!-- THE TAGS WILL BE COMING FROM JAVASCRIPT -->
-      </ul>
-      <div id="credit">Icons made by <a href="https://www.flaticon.com/authors/vectors-market"
-          title="Vectors Market">Vectors
-          Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-          href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
-          BY</a>
-      </div>
-    </div>
-  </main>
+    <div class="container">
 
-  <script src="script.js"></script>
+      <form>
+        <!-- JAMES: OZZY this form field was giving me weird issues.
+        why I made the new one and commented it out! please fix, thanks -->
+        <input style="display: none" type="text" required />
+        <input type="text" id="query">
+        <button id="searchButton"><img src="./assets/search.svg" alt=""></button><label>Search photos...</label>
+      </form>
+    </div>
+    </div>
+    <main>
+      <div id="tag">
+        <h3>Popular Tags:</h3>
+        <ul id="tagLinks">
+          <!-- THE TAGS WILL BE COMING FROM JAVASCRIPT -->
+        </ul>
+
+        <div class="results">
+        </div>
+      </div>
+
+
+      <div class="imgShowCase">
+      </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
