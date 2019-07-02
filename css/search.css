@@ -50,19 +50,3 @@ input[type='text']:valid ~ label {
   left: 1.3em;
   font-size: 1.1em;
 }
-
-/* WHEN SEARCH RESULT CAME */
-/* .form-container {
-  width: 40%;
-}
-input[type='text'] {
-  font-size: 1.1em;
-}
-button {
-  width: 45px;
-  height: 45px;
-  top: 0em;
-}
-label {
-  display: none;
-} */
