@@ -1,26 +1,25 @@
-.container {
+.form-container {
   width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 form {
   position: relative;
   width: 100%;
+  /* border: 2px solid #ffffff; */
 }
 label {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 100;
   position: absolute;
   top: 0.6em;
   left: 1em;
-  z-index: 0;
+  z-index: -1;
   transition: all 0.2s;
 }
 input[type='text'] {
   width: 100%;
   font-size: 1.5em;
-  padding: 0.6em 1em;
+  padding: 0.6em 0.9em;
   outline: none;
   border: none;
   border-radius: 30px;
@@ -51,3 +50,19 @@ input[type='text']:valid ~ label {
   left: 1.3em;
   font-size: 1.1em;
 }
+
+/* WHEN SEARCH RESULT CAME */
+/* .form-container {
+  width: 40%;
+}
+input[type='text'] {
+  font-size: 1.1em;
+}
+button {
+  width: 45px;
+  height: 45px;
+  top: 0em;
+}
+label {
+  display: none;
+} */
