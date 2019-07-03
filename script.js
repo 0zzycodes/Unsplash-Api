@@ -1,6 +1,7 @@
 let query = $('#query');
 let searchButton = $('#searchButton');
 const form = $('form');
+const loader = document.querySelector('.loader');
 // Photos Data
 let altDescription, id, links, urls, user;
 
@@ -20,8 +21,9 @@ form.on('submit', e => {
     )
       .then(Response => {
         console.log(Response);
+      loader.style.display = "block";
         return Response.json();
-      })
+            })
       .then(data => {
         $(resultPage).empty();
 
@@ -43,7 +45,8 @@ form.on('submit', e => {
                 <h6>${item.user.total_likes}</h6>
                 </div>
               </div>`).appendTo(resultPage);
-        });
+        });loader.style.display = "none";
+      
       });
   }
 });
