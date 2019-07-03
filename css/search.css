@@ -50,3 +50,8 @@ input[type='text']:valid ~ label {
   left: 1.3em;
   font-size: 1.1em;
 }
+
+.cont .loader {
+  display: none;
+  margin: 0 auto;
+}
