@@ -190,7 +190,7 @@ main {
 @media (max-width: 900px) {
   .results {
     max-width: 80%;
-    margin: auto
+    margin: auto;
     column-count: 2;
   }
 }
