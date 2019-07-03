@@ -11,7 +11,7 @@ let resultPage = $('.results');
 // Hiding the results page at first then show it when the search is initiated
 resultPage.hide();
 
-let ApiKey = 'a2c52360401a8d4b3543f5ef051e3f2637da2dff30442f7ff72ad891b59227cd';
+let ApiKey = 'YourAPIKEY';
 
 form.on('submit', e => {
   e.preventDefault();
