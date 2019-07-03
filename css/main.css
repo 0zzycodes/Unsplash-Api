@@ -30,7 +30,7 @@ main {
   padding: 110px 0 30px 0;
 }
 .title h1 {
-  font-size: 6vw;
+  font-size: 6vw !important;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
@@ -189,13 +189,13 @@ main {
 
 @media (max-width: 900px) {
   .results {
-    max-width: 1200px;
+    max-width: 80%;
+    margin: auto
     column-count: 2;
   }
 }
 @media (max-width: 500px) {
   .results {
-    max-width: 1200px;
     column-count: 1;
   }
   .results h1 {
